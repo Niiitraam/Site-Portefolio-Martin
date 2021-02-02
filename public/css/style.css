@@ -1,0 +1,176 @@
+/* Background */
+body{
+    margin: 0;
+    padding: 0;
+    cursor: none;
+    height: 100vh;
+}
+
+.img{
+    background-image: url(../image/photo_web_dev.jpeg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.nav-pos{
+    position: fixed;
+    top: 0;
+}
+
+.titre1{
+    font-size: 50px;
+    color: #25FDE9;
+}
+
+.bloc-presentation{
+    max-width: max-content;
+}
+
+#global{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Présentation section */
+
+.titre{
+    font-size: 40px;
+    color: #25FDE9;
+}
+
+.color{
+    color: #25FDE9;
+}
+
+.color-white{
+    color: white;
+}
+
+.texte1{
+    font-size: 25px;
+}
+
+.w-box{
+    width: 30%;
+}
+
+.style-box{
+    height: 150px;
+    border-radius: 5px;
+    background-image: url(../image/photo_web_dev.jpeg);
+    background-size: cover;
+}
+
+
+
+.class_test {
+    display: inline-block;
+    position: relative;
+    justify-content: center;
+}
+
+    .class_test:hover p.text {
+        opacity: 1;
+    }
+
+.class_test p.text {
+    color: #FFF;
+    margin: auto;
+    top: auto;
+    opacity: 0;
+    display: block;
+    position: absolute;
+    transition: 1s;
+    border-radius: 5px;
+}
+
+.border-box{
+    border: #25FDE9 1px solid;
+    border-radius: 5px;
+}
+
+.background-contact{
+    border: #25FDE9 1px solid;
+    border-radius: 10px;
+}
+
+.bg-dark{
+    display: block;
+  width: 100%;
+  height: calc(1.6em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: white;
+  background-color: #25FDE9;
+  background-clip: padding-box;
+  border: 1px solid #25FDE9;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+#bg-button{
+    background-color: #25FDE9;
+}
+
+#bg-button:hover{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.bg-b{
+    background-color: rgb(00, 000, 000, 0.3);
+}
+
+.cursor{
+    width: 40px;
+    height: 40px;
+    border: 1px dashed white;
+    border-radius: 50%;
+    position: absolute;
+    animation: Anim1 1s infinite alternate;
+}
+
+.cursor:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 5px;
+    background: #25FDE9;
+    border-radius: 50%;
+}
+
+.expand{
+    animation: Anim2.5s;
+    background: #25FDE9;
+    border: 1px solid #25FDE9;
+}
+
+@keyframes Anim1{
+    from{
+        transform: scale(1) rotate(0deg);
+    }
+    to{
+        transform: scale(0.7) rotate(90deg);
+    }
+}
+
+@keyframes Anim2{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform:scale(3);
+        opacity: 0;
+    }
+}
