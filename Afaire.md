@@ -1,0 +1,4 @@
+- email contact
+- projet à mettre dans la section portefolio
+- navbar scroll vers section avec animation sympa
+- partie backoffice pour modifier le tout

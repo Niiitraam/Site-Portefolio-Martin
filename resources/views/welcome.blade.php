@@ -22,14 +22,47 @@
     </head>
     <body class="antialiased img pb-5">
         <div class="cursor"></div>
+        
 
-        @include('partial.navbar')
-        @include('partial.bloc-presentation')
-        @include('partial.presentation')
-        @include('partial.parcours')
-        @include('partial.portfolio')
-        @include('partial.contact')
-        @include('partial.footer')
+        <div class="loader d-flex flex-column">
+            <div class="reveal-1">
+                <span class="lettre">C</span>
+                <span class="lettre">L</span>
+                <span class="lettre">I</span>
+                <span class="lettre">C</span>
+                <span class="lettre">K</span>
+            </div>
+            
+            <div class="reveal-2">
+                <span class="lettre">F</span>
+                <span class="lettre">O</span>
+                <span class="lettre">R</span>
+            </div>
+            
+            <div class="reveal-3">
+                <span class="lettre">E</span>
+                <span class="lettre">N</span>
+                <span class="lettre">T</span>
+                <span class="lettre">E</span>
+                <span class="lettre">R</span>
+            </div>
+           
+        </div>
+       
+        <div class="scrollbar"></div>
+        <div class="clickScrollbar"></div>
+        <div class="accueil d-none">
+            
+            @include('partial.navbar')
+            @include('partial.bloc-presentation')
+            @include('partial.presentation')
+            @include('partial.parcours')
+            @include('partial.portfolio')
+            @include('partial.contact')
+            @include('partial.footer')
+        </div>
+        
+      
 
 
         <script src="{{asset('js/main.js')}}"></script>

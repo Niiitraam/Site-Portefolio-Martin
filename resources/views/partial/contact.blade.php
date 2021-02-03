@@ -1,4 +1,4 @@
-<div class="d-flex flex-column justify-content-center align-items-center mt-5">
+<div class="d-flex flex-column justify-content-center align-items-center mt-5 reveal-2">
     <p class="titre text-center mb-5">Contactez moi</p>
     <div class="background-contact w-75 bg-b">
         <form class="p-5">
