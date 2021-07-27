@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Site;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactMail;
 
 class SiteController extends Controller
 {
@@ -35,7 +37,14 @@ class SiteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = request()->validate([
+            'name' => 'required',
+            'email' => 'required|email',
+            'message' => 'required'
+        ]);
+
+        Mail::to('martinmdvld@gmail.com')->send(new ContactMail($data));
+        return redirect()->back();
     }
 
     /**

@@ -72,3 +72,27 @@ progressBarClick.addEventListener('click', (e) => {
     })
 })
 
+var boxAll = document.getElementsByClassName('w-box')
+var pAll = document.getElementsByClassName('text')
+
+var tableauBox = Array.from(boxAll)
+var tableauP = Array.from(pAll)
+
+tableauBox.forEach((element, index) => {
+    element.addEventListener('mouseover', function () {
+        opacityOne(index)
+    });
+    element.addEventListener('mouseout', function () {
+        opacityNone(index)
+    });
+});
+
+function opacityOne(i){
+    tableauP[i].classList.add('text-one')
+    tableauP[i].classList.remove('text')
+}
+
+function opacityNone(i){
+    tableauP[i].classList.remove('text-one')
+    tableauP[i].classList.add('text')
+}

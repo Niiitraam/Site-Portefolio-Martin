@@ -26,6 +26,15 @@ body{
 
 .bloc-presentation{
     max-width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bloc1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #global{
@@ -58,33 +67,24 @@ body{
 }
 
 .style-box{
-    height: 150px;
+    height: 200px;
     border-radius: 5px;
     background-image: url(../image/photo_web_dev.jpeg);
     background-size: cover;
 }
 
-
-
-.class_test {
-    display: inline-block;
-    position: relative;
-    justify-content: center;
+.text{
+    opacity: 0;
+    transition: 1s;
+    color: white;
+    font-size: 20px;
 }
 
-    .class_test:hover p.text {
-        opacity: 1;
-    }
-
-.class_test p.text {
-    color: #FFF;
-    margin: auto;
-    top: auto;
-    opacity: 0;
-    display: block;
-    position: absolute;
+.text-one{
+    opacity: 1;
+    color: white;
     transition: 1s;
-    border-radius: 5px;
+    font-size: 20px;
 }
 
 .border-box{
@@ -304,4 +304,78 @@ body{
     width: 10px;
     height: 100%;
     background-color: rgb(170,170,170,0.356);
+}
+
+.bloc2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloc3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-martin{
+    width: 40%;
+    padding-left: 5%;
+}
+
+.bloc-text{
+    width: 50%;
+    padding-right: 5%;
+}
+
+.largeur-parcours{
+    width: 50%;
+}
+
+.bloc-portfolio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 75%;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-device-width : 150px) and (max-device-width : 600px){
+    .bloc3{
+        display: block;
+    }
+    .bloc2{
+        display: block;
+    }
+    .img-martin{
+        width: 50%;
+    }
+    .bloc-text{
+        width: 100%;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    .img-martin{
+        display: flex;
+        justify-content: center;
+        width:100%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .style-texte{
+        font-size: 18px;
+    }
+    .largeur-parcours{
+        width: 80%;
+    }
+    .w-box{
+        width: 45%;
+    }
+    p.text{
+        opacity: 1;
+    }
+    .cursor{
+        display: none;
+    }
 }
