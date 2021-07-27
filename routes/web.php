@@ -15,10 +15,26 @@ use App\Http\Controllers\SiteController;
 */
 
 
-Route::group([
-    'prefix' => LaravelLocalization::setLocale(),
-    'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
-], function(){
+// Route::group([
+//     'prefix' => LaravelLocalization::setLocale(),
+//     'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+// ], function(){
+//     Route::resource('/', SiteController::class);
+
+
+
+//     Auth::routes();
+
+//     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+//     Auth::routes();
+
+//     Route::get('/home', function() {
+//         return view('home');
+//     })->name('home')->middleware('auth');
+// });
+
+
     Route::resource('/', SiteController::class);
 
 
@@ -32,4 +48,3 @@ Route::group([
     Route::get('/home', function() {
         return view('home');
     })->name('home')->middleware('auth');
-});
