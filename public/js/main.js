@@ -54,10 +54,8 @@ document.querySelectorAll('[class*="reveal-"]').forEach(function(r){
 
 var progressBar = document.querySelector('.scrollbar')
 
-let totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
-
 window.addEventListener('scroll', () => {
-
+    let totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
     let progress = (document.documentElement.scrollTop / totalHeight) * 100
     progressBar.style.height = `${progress}%`
     progressBar.style.opacity = `${progress}%`
@@ -66,9 +64,11 @@ window.addEventListener('scroll', () => {
 var progressBarClick = document.querySelector('.clickScrollbar')
 
 progressBarClick.addEventListener('click', (e) => {
-    let newPageScroll = e.clientY / progressBarClick.offsetHeight * totalHeight
+    let totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
+    let newPageScroll = e.clientX / progressBarClick.offsetHeight * totalHeight
     window.scrollTo({
         top: newPageScroll,
         behavior: 'smooth'
     })
 })
+

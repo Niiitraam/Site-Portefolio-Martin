@@ -135,6 +135,8 @@ body{
     border-radius: 50%;
     position: absolute;
     animation: Anim1 1s infinite alternate;
+    z-index: 500;
+    pointer-events: none;
 }
 
 .cursor:before{
@@ -147,6 +149,7 @@ body{
     height: 5px;
     background: #25FDE9;
     border-radius: 50%;
+    pointer-events: none;
 }
 
 .expand{
@@ -288,18 +291,17 @@ body{
     position: fixed;
     top: 0;
     right: 0;
-    width: 15px;
+    width: 10px;
     height: 0;
     opacity: 0;
-    background: linear-gradient(to top,#25FDE9, #1180ff);
+    background: linear-gradient(to top,#25FDE9, #ffffff);
 }
 
 .clickScrollbar{
     position: fixed;
     top: 0;
     right: 0;
-    width: 15px;
+    width: 10px;
     height: 100%;
-    background: rgb(170,170,170, 0,356);
+    background-color: rgb(170,170,170,0.356);
 }
-

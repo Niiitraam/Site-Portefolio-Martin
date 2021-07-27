@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Martin Manderveld</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -52,8 +52,6 @@
         <div class="scrollbar"></div>
         <div class="clickScrollbar"></div>
         <div class="accueil d-none">
-            
-            @include('partial.navbar')
             @include('partial.bloc-presentation')
             @include('partial.presentation')
             @include('partial.parcours')
