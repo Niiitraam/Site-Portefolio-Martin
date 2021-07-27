@@ -8,9 +8,9 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="{{asset('css/style.css')}}">
-        <link rel="stylesheet" href="{{asset("css/app.css")}}"/>
-        <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}">
+        <link rel="stylesheet" href="{{secure_asset('css/style.css')}}">
+        <link rel="stylesheet" href="{{secure_asset("css/app.css")}}"/>
+        <link rel="stylesheet" href="{{ secure_asset('vendor/fontawesome-free/css/all.min.css') }}">
         
 
         <style>
@@ -63,7 +63,7 @@
       
 
 
-        <script src="{{asset('js/main.js')}}"></script>
-        <script src="{{asset("js/app.js")}}"></script>
+        <script src="{{secure_asset('js/main.js')}}"></script>
+        <script src="{{secure_asset("js/app.js")}}"></script>
     </body>
 </html>

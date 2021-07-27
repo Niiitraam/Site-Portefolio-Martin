@@ -3,7 +3,7 @@
         <p class="titre text-center mb-5 reveal-1">Qui suis-je?</p>
         <div class="bloc2">
             <div class="img-martin">
-               <img src="{{asset('image/photo_martin.jpeg')}}" style="width:100%" alt="image martin"> 
+               <img src="{{secure_asset('image/photo_martin.jpeg')}}" style="width:100%" alt="image martin"> 
             </div>
             
             <div class="bloc-text">
