@@ -4,6 +4,7 @@ body{
     padding: 0;
     cursor: none;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .img{
@@ -62,6 +63,10 @@ body{
     font-size: 25px;
 }
 
+.text-box{
+    font-size: 25px;
+}
+
 .w-box{
     width: 30%;
 }
@@ -69,22 +74,33 @@ body{
 .style-box{
     height: 200px;
     border-radius: 5px;
-    background-image: url(../image/photo_web_dev.jpeg);
     background-size: cover;
+}
+
+.img-box-1{
+    background-image: url(../image/photo-web-isabel.png);
+}
+
+.img-box-2{
+    background-image: url(../image/photo-web-martin.png);
+}
+
+.img-box-3{
+    background-image: url(../image/photo-web-thelabs.png);
 }
 
 .text{
     opacity: 0;
     transition: 1s;
-    color: white;
-    font-size: 20px;
+    color: #25FDE9;
+    font-size: 26px;
 }
 
 .text-one{
     opacity: 1;
-    color: white;
     transition: 1s;
-    font-size: 20px;
+    color: #25FDE9;
+    font-size: 26px;
 }
 
 .border-box{
@@ -115,11 +131,12 @@ body{
 
 #bg-button{
     background-color: #25FDE9;
+    transition: 1s;
 }
 
 #bg-button:hover{
-    opacity: 0.8;
-    transition: 0.5s;
+    opacity: 0.5;
+    transition: 1s;
 }
 
 .bg-b{
@@ -129,57 +146,57 @@ body{
 /* cursor */
 
 .cursor{
-    width: 40px;
-    height: 40px;
-    border: 2px dashed white;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     position: absolute;
     animation: Anim1 1s infinite alternate;
-    z-index: 500;
+    z-index: 300;
+    border: 1px dashed #25FDE9;
     pointer-events: none;
+    transition: .15s;
 }
 
-.cursor:before{
+.cursor2{
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50% , -50%);
     width: 5px;
     height: 5px;
+    pointer-events: none;
+    z-index: 300;
     background: #25FDE9;
     border-radius: 50%;
-    pointer-events: none;
 }
 
 .expand{
-    animation: Anim2.5s;
-    background: #25FDE9;
+    animation: Anim2 2.5s;
     border: 1px solid #25FDE9;
 }
 
-@keyframes Anim1{
-    from{
-        transform: scale(1) rotate(0deg);
-    }
-    to{
-        transform: scale(0.7) rotate(90deg);
-    }
+@keyframes  Anim1{
+from{
+transform: scale(1) rotate(0deg);
+}
+to{
+transform: scale(0.7) rotate(90deg);
+}
 }
 
-@keyframes Anim2{
+@keyframes  Anim2{
     0%{
-        transform: scale(1);
+    transform: scale(1);
     }
     50%{
-        transform: scale(2);
+    transform: scale(2);
     }
     100%{
-        transform:scale(3);
-        opacity: 0;
+    transform:scale(3);
+    opacity: 0;
     }
-}
-
+    }
 
 /* loader */
 
@@ -196,6 +213,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 200;
 }
 
 .lettre{
@@ -254,7 +272,7 @@ body{
 
 .fondu-out{
     opacity: 0;
-    transition: opacity 0.4s ease-out;
+    transition: opacity 0.7s ease-out;
 }
 
 [class*="reveal-"]{
@@ -336,9 +354,81 @@ body{
 .bloc-portfolio{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 75%;
     flex-wrap: wrap;
+}
+
+.ouverture{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(00, 000, 000, 0.8);
+}
+
+.position-box-1{
+    width: 75%;
+    height: 85%;
+    border: 1px solid #25FDE9;
+    border-radius: 0.25rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+    transition: 1s;
+}
+
+.position-box-2{
+    width: 75%;
+    height: 85%;
+    border: 1px solid #25FDE9;
+    border-radius: 0.25rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+    transition: 1s;
+}
+
+.position-box-3{
+    width: 75%;
+    height: 85%;
+    border: 1px solid #25FDE9;
+    border-radius: 0.25rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+    transition: 1s;
+}
+
+.image-1{
+    width: 50%;
+    margin-bottom: 5%;
+}
+
+.fermeture-modal{
+    color: white;
+    width: 75%;
+}
+
+.fermeture-modal-1{
+    color: white;
+    width: 75%;
+}
+
+.fermeture-modal-2{
+    color: white;
+    width: 75%;
+}
+
+.ouverture-box{
+    z-index: 100;
+    transition: 1s;
 }
 
 @media screen and (min-device-width : 150px) and (max-device-width : 600px){
@@ -370,12 +460,28 @@ body{
         width: 80%;
     }
     .w-box{
-        width: 45%;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: flex;
     }
     p.text{
         opacity: 1;
     }
     .cursor{
         display: none;
+    }
+    .cursor2{
+        display: none;
+    }
+    .bloc-portfolio{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .text-box{
+        font-size: 15px;
+    }
+    .image-1{
+        width: 70%;
     }
 }
