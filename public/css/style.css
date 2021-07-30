@@ -438,17 +438,13 @@ transform: scale(0.7) rotate(90deg);
     .bloc2{
         display: block;
     }
-    .img-martin{
-        width: 50%;
-    }
+    
     .bloc-text{
         width: 100%;
         padding-right: 10%;
         padding-left: 10%;
     }
     .img-martin{
-        display: flex;
-        justify-content: center;
         width:100%;
         padding-left: 20%;
         padding-right: 20%;
