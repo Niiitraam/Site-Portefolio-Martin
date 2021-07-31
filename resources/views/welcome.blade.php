@@ -55,17 +55,17 @@
             <div class="position-box-1">
             <p class="fermeture-modal">fermer</p>
             <img src="{{asset('image/photo-web-isabel.png')}}" class="image-1" alt="">
-                <p class="text-box color-white" style="text-align: center;"><span class="color">Nom -></span> Isabel Gomez Interiors <br> <span class="color">Description du projet -></span>Blablabla<br> <span class="color">Durée -></span> 2 Mois<br><span class="color">Lien -></span> https://github.com/Niiitraam/isabel-gomez</p>
-            </div>
-            <div class="position-box-2">
-                <p class="fermeture-modal-1">fermer</p>
-                <img src="{{asset('image/photo-web-martin.png')}}" class="image-1" alt="">
-                    <p class="text-box color-white" style="text-align: center;"><span class="color">Nom -></span> Martin Manderveld <br> <span class="color">Description du projet -></span>Blablabla<br> <span class="color">Durée -></span> 1 Mois<br><span class="color">Lien -></span> https://github.com/Niiitraam/Site-Portefolio-Martin</p>
+                <p class="text-box color-white" style="text-align: center;"><span class="color">Nom -></span> Isabel Gomez Interiors <br> <span class="color">Description du projet -></span>Blablabla<br> <span class="color">Durée -></span> 2 Mois<br><span class="color">Lien -></span><a href=" https://github.com/Niiitraam/isabel-gomez" style="text-decoration: none" class="a-lien-box" target="_blank"> https://github.com/Niiitraam/isabel-gomez</a></p>
             </div>
             <div class="position-box-3">
                 <p class="fermeture-modal-2">fermer</p>
                 <img src="{{asset('image/photo-web-thelabs.png')}}" class="image-1" alt="">
-                    <p class="text-box color-white" style="text-align: center;"><span class="color">Nom -></span> The Labs <br> <span class="color">Description du projet -></span>Blablabla<br> <span class="color">Durée -></span> 1 Mois<br><span class="color">Lien -></span> https://github.com/Niiitraam/thelabs_coding13_martin</p>
+                    <p class="text-box color-white" style="text-align: center;"><span class="color">Nom -></span> The Labs <br> <span class="color">Description du projet -></span>Blablabla<br> <span class="color">Durée -></span> 1 Mois<br><span class="color">Lien -></span><a href="https://github.com/Niiitraam/thelabs_coding13_martin" style="text-decoration: none" class="a-lien-box" target="_blank"> https://github.com/Niiitraam/thelabs_coding13_martin</a></p>
+            </div>
+            <div class="position-box-2">
+                <p class="fermeture-modal-1">fermer</p>
+                <img src="{{asset('image/photo-web-martin.png')}}" class="image-1" alt="">
+                    <p class="text-box color-white" style="text-align: center;"><span class="color">Nom -></span> Martin Manderveld <br> <span class="color">Description du projet -></span>Blablabla<br> <span class="color">Durée -></span> 1 Mois<br><span class="color">Lien -></span><a href="https://github.com/Niiitraam/Site-Portefolio-Martin" style="text-decoration: none" class="a-lien-box" target="_blank"> https://github.com/Niiitraam/Site-Portefolio-Martin</a></p>
             </div>
         </div>
        

@@ -431,6 +431,19 @@ transform: scale(0.7) rotate(90deg);
     transition: 1s;
 }
 
+.a-lien-box{
+    color: white;
+    cursor: none;
+}
+
+.a-lien-box:hover{
+    color: #25FDE9;   
+}
+
+.color-lien-reseau:hover{
+    color: #25FDE9;
+}
+
 @media screen and (min-device-width : 150px) and (max-device-width : 600px){
     .bloc3{
         display: block;
